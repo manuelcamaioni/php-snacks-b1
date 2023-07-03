@@ -18,7 +18,7 @@
         if(strlen($userName) > 3 && !empty($userEmail) && !empty($userAge)){
             echo "Accesso riuscito";
         } else{
-            echo "Dati inseriti non validi";
+            echo "Accesso negato";
         }
     ?>
 </body>
