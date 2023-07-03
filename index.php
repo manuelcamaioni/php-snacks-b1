@@ -48,14 +48,14 @@ $matches = [
     <title>Basketball Matches</title>
 </head>
 <body>
-<h2>
+
     <?php
         foreach($matches as $match) {
     
-            echo $match['team1'] .  ' - ' . $match['team2'] . ' | ' . $match['point_team_1'] . '-' . $match['point_team_2'];
-            echo "</br>";
+            echo "<h2>" . $match['team1'] .  ' - ' . $match['team2'] . ' | ' . $match['point_team_1'] . '-' . $match['point_team_2'] . "</h2>";
+      
     }?>
-</h2>
+
     
 </body>
 </html>
