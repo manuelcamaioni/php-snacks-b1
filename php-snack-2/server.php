@@ -15,7 +15,7 @@
 </head>
 <body>
     <?php 
-        if(strlen($userName) > 3 && !empty($userEmail) && !empty($userAge)){
+        if(strlen($userName) > 3 && !empty($userEmail) && str_contains($userEmail, '.') && !empty($userAge)){
             echo "Accesso riuscito";
         } else{
             echo "Accesso negato";
