@@ -16,9 +16,9 @@ function createArray($array1, $a, $b){
         for($i = $a; $i < $b; $i++){
             $newArray[] = $array1[$i];
         }
-        
+         return $newArray;
     }
-    return $newArray;
+   return false;
 }
 
 $generatedArray = [createArray($array, 1, 3)];
