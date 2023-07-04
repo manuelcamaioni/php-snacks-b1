@@ -13,7 +13,7 @@ function createArray($array1, $a, $b){
 
     if($a < $b && $b <= count($array1)){
 
-        for($i = 0; $i < $b; $i++){
+        for($i = $a; $i < $b; $i++){
             $newArray[] = $array1[$i];
         }
         
