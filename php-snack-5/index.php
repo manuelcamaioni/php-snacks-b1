@@ -10,7 +10,7 @@ su schermo le differenze.  -->
 class Indumento {
     protected $materiale;
     
-    function __construct(string $materiale){
+    function __construct(string $materiale = 'Sintetico'){
         $this->materiale=$materiale;
     }
 }
@@ -32,7 +32,7 @@ class Cappello extends Indumento{
     }
 }
 
-var_dump(new Indumento('Sintetico'));
+var_dump(new Indumento());
 var_dump(new Scarpa(44, 'Tessuto'));
 var_dump(new Cappello(true, 'Tessuto'));
 ?>
