@@ -8,14 +8,14 @@ su schermo le differenze.  -->
 
 <?php 
 class Indumento {
-    public $materiale;
+    protected $materiale;
     
     function __construct(string $materiale){
         $this->materiale=$materiale;
     }
 }
 class Scarpa extends Indumento{
-    public $taglia;
+    private $taglia;
 
     function __construct(int $taglia, string $materiale){
         parent::__construct($materiale);
@@ -24,7 +24,7 @@ class Scarpa extends Indumento{
 }
 
 class Cappello extends Indumento{
-    public $visiera;
+    private $visiera;
 
     function __construct(bool $visiera, string $materiale){
         parent::__construct($materiale);
